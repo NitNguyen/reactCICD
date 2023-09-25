@@ -2,6 +2,7 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import vitePluginImp from "vite-plugin-imp";
 import cssInjectedByJsPlugin from "vite-plugin-css-injected-by-js";
+import generouted from '@generouted/react-router/plugin'
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -18,6 +19,7 @@ export default defineConfig({
         },
       ],
     }),
+    generouted()
   ],
   css: {
     preprocessorOptions: {
